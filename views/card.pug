@@ -1,0 +1,9 @@
+extends layout.pug
+block content
+  h2= text
+  P= hint
+    
+  if side == "question"
+    a(href="/cards/#{id}?side=answer") Answer
+  
+  
